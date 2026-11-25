@@ -1,0 +1,3 @@
+*.diff -text
+tools/template/* binary
+*.bin binary
