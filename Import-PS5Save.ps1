@@ -46,7 +46,7 @@ if (-not $jsav) {
     if ($enc) { throw "Only an encrypted save was found ($($enc[0].Name)). Decrypt it with a PS5 save tool first (the decrypted file starts with 'JSAV')." }
     throw "No decrypted story save (file starting with 'JSAV') found in $Source."
 }
-$chives = $files | Where-Object { $_.Name -ieq 'chives.dat' } | Select-Object -First 1
+$chives = $files | Where-Object { $_.Name -ieq 'chives.dat' -or $_.Name -ieq 'ps5-header.bin' } | Select-Object -First 1
 
 if ($AutoLoad) {
     $others = Get-ChildItem $SavesRoot -Directory | Where-Object { $_.Name -like 'SARC*' }

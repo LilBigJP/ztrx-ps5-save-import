@@ -42,6 +42,12 @@ The importer:
 - installs it as the next free `SARCnnnn` slot, never overwriting a save,
 - moves your other story saves to `<data>\save-backups\` so the game loads the new one.
 
+### Example save
+
+`examples/company-cars-70pct/` is a ready-to-import save (Company Cars, Chapter 4, 70%; a
+modded save with about 999M cash). Drag that folder onto `Import-PS5Save.bat` to try it.
+See its README for where it came from and what was left out.
+
 ## Where the saves go
 
 ztrx keeps two separate folders: **the ztrx folder** (the code you built) and **the data
